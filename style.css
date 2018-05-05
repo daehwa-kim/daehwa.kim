@@ -624,19 +624,21 @@ section {
         margin-bottom: 12pt;
     }
     #contactHeader {
-        height: 16vh;
+        height: 10vh;
+        line-height: 10vh;
+        vertical-align: middle;
     }
     #contactHeader h1 {
-        margin-top: 6vh;
-        font-size: 1.6em;
+        margin-top: 0;
+        font-size: 1.4em;
         letter-spacing: 6px;
         opacity: 0.8;
     }
     #contactHeader .shadow-bottom {
-        top: calc(16vh - 6px);
+        top: calc(10vh - 6px);
     }
     #contactMain {
-        margin-top: 24vh;
+        margin-top: 20vh;
     }
     #contactMain img {
         width: 64px;
