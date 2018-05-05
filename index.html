@@ -1,1 +1,150 @@
+<!DOCTYPE html>
 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Daehwa Kim</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body id="page-top">
+
+        <main id="main">
+
+            <!-- Navigation Menu -->
+            <div id="nav" hidden>
+                sfsafasf
+
+            </div>
+            <!-- Home -->
+            <section class="parallax" id="home">
+                <div id="frame"></div>
+
+                <div id="text">
+                    <img src="images/title.png" id="homeTitle"> <!-- <h1>Daehwa Kim</h1> -->
+                    <h2>Student Developer</h2>
+                    <hr>
+                    <a class="homeLink smooth-scroll" href="#about">About</a>
+					<a class="homeLink smooth-scroll" href="#skills">Skills</a>
+					<a class="homeLink smooth-scroll" href="#portfolio">Portfolio</a>
+					<a class="homeLink smooth-scroll" href="#contact">Contact</a>
+                </div>
+
+                <div id="credit">
+                    This page has been designed by Daehwa Kim, using jQuery, Bootstrap and ScrollReveal libraries.
+                </div>
+
+                <div class="shadow-bottom"></div>
+            </section>
+
+            <!-- About -->
+            <section class="static" id="about">
+                <img src="images/about_frame.png" id="aboutFrame">
+                <img src="images/about_macbook.png" id="aboutMacbook">
+                <img src="images/about_mugcup.png" id="aboutMugcup">
+
+                <div id="aboutHeader">
+                    <h1>Simply, excellent</h1>
+                    <ul>
+                        <li>Daehwa is a student at Conestoga College, currently in his Computer Science/Analyst program.</li>
+                        <li>Daehwa is a reliable, industrious and positive person who is confident with his field.</li>
+                        <li>Daehwa has been proving himself with an outstanding academic performance,<br>with a GPA score of 4.0 out of 4.0.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section class="parallax" id="portfolio">
+                <table>
+                    <tr>
+                        <td>
+                            <div id="portfolioList">
+                                <div class="thumbnail" style="background-image: url('images/portfolio/thumbnails/1.jpg');"><a>EDM World</a></div>
+                                <div class="thumbnail" style="background-image: url('images/portfolio/thumbnails/2.jpg');"><a>Seoul City Tour</a></div>
+                                <div class="thumbnail" style="background-image: url('images/portfolio/thumbnails/3.jpg');"><a>Personal Server</a></div>
+                                <div class="thumbnail" style="background-image: url('images/portfolio/thumbnails/4.jpg');"><a>Item Checkout</a></div>
+                                <div class="thumbnail" style="background-image: url('images/portfolio/thumbnails/5.jpg');"><a>Gomoku</a></div>
+                                <div class="thumbnail" style="background-image: url('');" itemTitle="Gomoku">More to come</div>
+                            </div>
+
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="shadow-top"></div>
+                <div class="shadow-bottom"></div>
+            </section>
+
+            <!-- Contract -->
+            <section class="static" id="contact">
+                <div id="contactHeader">
+                    <h1>Contact me!</h1>
+                    <div class="shadow-bottom"></div>
+                </div>
+
+				<div id="contactMain">
+                    <h1>I am here to help you.</h1>
+                    <hr>
+                    <p>Are you interested in starting a project with me or hiring me?</p>
+                    <p>I would be a great addition to your team!</p>
+                    <p>Give me a call or send me an email and I will get back to you as soon as possible.</p>
+                    <a href="tel:5197214019"><figure>
+                        <img src="images/icon_phone.png">
+                        <figcaption>+1 519-721-4019</figcaption>
+                    </figure></a>
+
+                    <a href="mailto:daehwa@hotmail.com"><figure>
+                        <img src="images/icon_email.png">
+                        <figcaption>daehwa@hotmail.com</figcaption>
+                    </figure></a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Floating Items -->
+        <div id="floating" hidden>
+            <a class="floatingButton smooth-scroll" href="#page-top">Top</a>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="vendor/jquery/jquery.js"></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+        <script src="script.js"></script>
+
+        <script>
+            var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+            if (!isIE)
+            {
+                window.sr = ScrollReveal({ reset: true, container: '#main' });
+
+                // Home
+                $(".homeLink").fadeIn(1500);
+
+                // About
+                sr.reveal('#aboutFrame', { duration: 600, delay: 200, scale: 1 });
+                sr.reveal('#aboutMacbook', { duration: 600, delay: 200, scale: 1 });
+                sr.reveal('#aboutHeader li', { duration: 600, delay: 500 }, 80);
+
+                // Portfolio
+                sr.reveal('.thumbnail', { duration: 400, delay: 200, scale: 0.94 }, 80);
+
+                // Contact
+                sr.reveal('#contact figure', { duration: 400, delay: 200, scale: 0.94 }, 80);
+            }
+
+            if (isIE)
+            {
+                $("#home h1").css("background-image", "none");
+                $("#home h1").css("background-clip", "none");
+                $("#home h1").css("-webkit-background-clip", "none");
+                $("#floating").show();
+            }
+        </script>
+
+    </body>
+</html>
