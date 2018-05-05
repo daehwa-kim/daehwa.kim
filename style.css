@@ -379,6 +379,12 @@ section {
     }
 }
 
+@media (max-width: 600px) {
+    #aboutMacbook {
+        top: calc(80vh - 20vw);
+    }
+}
+
 /* Portfolio */
 #portfolio::after {
     background-image: url('images/portfolio.png');
