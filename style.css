@@ -224,12 +224,13 @@ section {
     }
     #home h2 {
         text-align: center;
-        font-size: 4vw;
+        font-size: 4.2vw;
+        letter-spacing: 0;
         margin-top: 5px;
     }
     #home hr {
         margin-top: 35px;
-        margin-bottom: 18vh;
+        margin-bottom: 14vh;
     }
     .homeLink {
         padding: 10px 25px 10px 25px;
@@ -251,7 +252,7 @@ section {
         left: 7%;
     }
     #home #credit {
-        top: calc(100vh - 90px);
+        top: calc(100vh - 75px);
         width: 86%;
         left: 7%;
         font-size: 1.1em;
@@ -367,8 +368,11 @@ section {
     #about {
         height: 110vh;
     }
+    #aboutHeader h1 {
+
+    }
     #aboutMacbook {
-        top: calc(78vh - 25vw);
+        top: calc(80vh - 25vw);
         left: -2vw;
         width: 90vw;
         height: auto;
@@ -483,10 +487,10 @@ section {
         margin-bottom: 1vh;
     }
     #portfolio {
-        height: 350vw;
+        height: 353vw;
     }
     #portfolio .shadow-bottom {
-        top: calc(350vw - 5vh);
+        top: calc(353vw - 5vh);
     }
 }
 
