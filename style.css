@@ -378,7 +378,7 @@ section {
 
 @media (max-width: 600px) {
     #aboutHeader {
-        top: 6vh;
+        top: 5.5vh;
     }
     #aboutMacbook {
         top: calc(80vh - 20vw);
@@ -636,7 +636,7 @@ section {
         top: calc(16vh - 6px);
     }
     #contactMain {
-        margin-top: 26vh;
+        margin-top: 24vh;
     }
     #contactMain img {
         width: 64px;
@@ -651,7 +651,7 @@ section {
     #contactMain figure {
         width: 100%;
         margin: 0;
-        padding: 20px 0;
+        padding: 16px 0;
         font-size: 1.1em;
     }
 }
@@ -745,5 +745,12 @@ section {
     #floating {
         top: calc(100vh - 75px);
         left: calc(100vw - 80px);
+    }
+}
+
+@media (max-width: 600px) {
+    #floating {
+        top: calc(100vh - 70px);
+        left: calc(100vw - 75px);
     }
 }
