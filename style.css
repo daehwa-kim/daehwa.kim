@@ -261,7 +261,7 @@ section {
         text-shadow: 0 1px 1px black;
     }
     #home::after {
-        background-position: 70% center;
+        background-position: 75% center;
     }
 }
 
