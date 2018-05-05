@@ -620,7 +620,7 @@ section {
         font-size: 13pt;
     }
     #contact p {
-        font-size: 1.1em;
+        font-size: 1.05em;
         margin-bottom: 12pt;
     }
     #contactHeader {
@@ -628,7 +628,9 @@ section {
     }
     #contactHeader h1 {
         margin-top: 6vh;
-        font-size: 1.5em;
+        font-size: 1.6em;
+        letter-spacing: 6px;
+        opacity: 0.8;
     }
     #contactHeader .shadow-bottom {
         top: calc(16vh - 6px);
