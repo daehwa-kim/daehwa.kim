@@ -378,7 +378,7 @@ section {
 
 @media (max-width: 600px) {
     #aboutHeader {
-        top: 5.5vh;
+        top: 5vh;
     }
     #aboutMacbook {
         top: calc(80vh - 20vw);
@@ -624,8 +624,8 @@ section {
         margin-bottom: 12pt;
     }
     #contactHeader {
-        height: 10vh;
-        line-height: 10vh;
+        height: 13vh;
+        line-height: 13vh;
         vertical-align: middle;
     }
     #contactHeader h1 {
@@ -635,10 +635,10 @@ section {
         opacity: 0.8;
     }
     #contactHeader .shadow-bottom {
-        top: calc(10vh - 6px);
+        top: calc(13vh - 6px);
     }
     #contactMain {
-        margin-top: 15vh;
+        margin-top: 19vh;
     }
     #contactMain img {
         width: 64px;
