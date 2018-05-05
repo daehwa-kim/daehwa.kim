@@ -369,7 +369,7 @@ section {
         height: 110vh;
     }
     #aboutHeader h1 {
-
+        /* font-size: 1.8em; */
     }
     #aboutMacbook {
         top: calc(80vh - 25vw);
@@ -728,4 +728,11 @@ section {
     -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
     -o-box-shadow: 0 3px 7px rgba(0,0,0,0.3);
     box-shadow: 0 3px 7px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+    #floating {
+        top: calc(100vh - 50px);
+        left: calc(100vw - 50px);
+    }
 }
