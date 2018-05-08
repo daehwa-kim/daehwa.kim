@@ -1,0 +1,111 @@
+/* Header styling: */
+
+header {
+	height: 160px;
+	padding-top:40px;
+}
+
+header #shadow {
+	height:15px;
+	top:175px;
+	background-image: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 90%);
+	background-image: -o-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 90%);
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 90%);
+	background-image: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 90%);	
+}
+
+header #dividingline {
+	top:190px;
+	position:absolute;
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+}
+
+/* Headings: */
+
+h1{
+	/* The logo text */
+	font-size:5em;
+}
+
+h2{
+	font-size:1.8em;
+	font-weight:normal;
+	margin: 30px 0;
+	text-transform:uppercase;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted #d80d57;
+}
+
+/* Main styling: */
+
+main {
+	padding: 1% 1%;
+}
+
+aside {
+	float: left;
+	width: 22%;
+	max-width: 400px;
+	background-color: white;
+	margin: 1% 1%;
+	overflow: hidden;
+	text-align: center;
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	
+	/* Applying CSS3 rounded corners: */
+    -moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:4px;
+	
+	-moz-box-shadow:0px 6px 6px #d6d6d6;
+	-webkit-box-shadow:0px 6px 6px #d6d6d6;
+	box-shadow:0px 6px 6px #d6d6d6;
+}
+
+#albums {
+	width: 14%;
+	max-width: 300px;
+}
+
+aside p{
+	padding: 5px 0 15px 0;
+	margin: 0;	
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+
+aside #title{
+	font-size:1.1em;
+	font-weight:bold;
+	color: gray;
+	padding: 6px;
+	text-transform:uppercase;	
+	letter-spacing: 0.10em;
+	background-image: linear-gradient(#f3f3f3 0%, #e3e3e3 95%);	
+	background-image: -o-linear-gradient(#f3f3f3 0%, #e3e3e3 95%);	
+	background-image: -webkit-linear-gradient(#f3f3f3 0%, #e3e3e3 95%);	
+	background-image: -moz-linear-gradient(#f3f3f3 0%, #e3e3e3 95%);	
+}
+
+section {
+	float: left;
+	width:65%;
+	margin: 1% 1%;
+	overflow: hidden;
+	
+	/* Applying CSS3 rounded corners: */
+    -moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:4px;
+	
+	-moz-box-shadow:0px 6px 6px #d6d6d6;
+	-webkit-box-shadow:0px 6px 6px #d6d6d6;
+	box-shadow:0px 6px 6px #d6d6d6;
+}
+
+article:hover{
+		border-left-color: #ffffff;
+}

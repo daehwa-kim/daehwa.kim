@@ -1,0 +1,332 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	font-size:1em;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#444444;
+	background-color:#e6e6e6;
+	margin: 0;
+}
+
+/* Header styling: */
+
+header {
+	height: 300px;	
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	padding-top:200px;
+	background-image: url(../images/header_bg_blur.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+header #shadow {
+	height:80px;
+	width:100%;
+	position:absolute;
+	top:420px;
+	background-image: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 80%);
+	background-image: -o-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 80%);
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 80%);
+	background-image: -moz-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 80%);	
+}
+
+header #dividingline {
+	height:10px;
+	width:100%;
+	float:left;
+	position:sticky;
+	top:490px;	
+	background-color: #d80d57;	
+    -moz-border-radius:10px 10px 0 0;
+	-webkit-border-radius:10px 10px 0 0;
+	border-radius:10px 10px 0 0;
+}
+
+header #section_top {
+	height:30px;
+	width:79%;
+	float:right;
+	position:sticky;
+	top:470px;
+	background-color:white;	
+    -moz-border-radius:30px 0 0 0;
+	-webkit-border-radius:30px 0 0 0;
+	border-radius:30px 0 0 0;
+}
+
+/* Hyperlink Styles: */
+
+a {
+	color:#d80d57;
+	text-decoration:none;
+	outline:none;
+}
+	
+.speciallink{
+	font-weight:bold;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+	color:#888888;
+	padding:2px 10px 4px 10px;
+	border: 0px solid #cccccc;
+	background-color:#f3f3f3;
+    -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin-right: 4px
+}
+
+a:hover{
+	color:#d80d57;
+}
+
+a img{
+	border:none;
+}
+
+.go_button {
+	font-size:0.4em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	float: right; 
+	margin-top:10px;
+	margin-right: 2px;  
+	padding: 6px;
+	text-align: center;
+}
+
+.go_button:hover {
+	
+}
+.go_button:active {
+	margin-top:12px;
+}
+
+/* Headings: */
+
+h1,h3{
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+	color: white;
+}
+
+h1{
+	/* The logo text */
+	font-size:7em;
+	padding:0;
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-weight:lighter;
+	letter-spacing:-0.02em;
+	text-transform:uppercase;
+	text-shadow:0 0 8px #551155;
+}
+
+h3{
+	/* The slogan text */
+	font-size:1.6em;
+	font-weight:lighter;
+	letter-spacing:0.1em;
+	text-transform:uppercase;
+	margin: 10px auto;
+	text-shadow:0 1px 2px #551155;
+}
+
+h2{
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	font-size:3em;
+	font-weight:lighter;
+	letter-spacing:0.01em;
+	color: #d80d57;
+	margin-bottom: 30px;
+}
+
+p{
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	line-height:1.5em;
+	padding-bottom:1em;
+	font-size:1.2em;
+	letter-spacing:0.01em;
+}
+
+.line{
+	/* The dividing line: */
+	height:1px;
+	background-color:white;
+	border-top: 1px dotted #aaaaaa;
+	margin:20px 4.5%;
+	overflow:hidden;	
+}
+
+/* Main styling: */
+
+main {
+	width: auto;	
+	overflow: hidden;
+}
+
+aside {
+	float: left;
+	width: 20%;
+}
+
+aside p{
+	color:gray;
+	display:block;	
+	font-size:1.5em;
+	font-weight:bold;
+	text-transform:uppercase;	
+	background-color: white;
+	text-align: center;
+	letter-spacing: 0.15em;
+	padding:5px 25px;
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	margin: 0px 4% 30px 8%;
+	
+	-moz-box-shadow:0px 2px 2px #d3d3d3;
+	-webkit-box-shadow:0px 2px 2px #d3d3d3;
+	box-shadow:0px 2px 2px #d3d3d3;
+}
+
+section {
+	float: right;
+	padding: 0 0 20px 0;
+	min-width: 400px;
+	background-color:white;
+	width:79%;
+	
+	-moz-box-shadow:-6px 0px 6px #d6d6d6;
+	-webkit-box-shadow:-6px 0px 6px #d6d6d6;
+	box-shadow:-6px 0px 6px #d6d6d6;
+	}
+
+/* The clearfix hack to clear the floats: */
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+
+nav {
+	padding-top: 35px;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#d80d57;
+	display:block;	
+	font-size:1.5em;
+	font-weight:bold;
+	font-family:"Segoe UI","Myriad Pro",Helvetica,Arial,Sans-Serif;
+	text-transform:uppercase;	
+	margin: 0px 4% 20px 8%;
+	padding:15px 25px;
+	background-color: #f0f0f0;
+	border-left:5px solid #d80d57;
+	
+	-moz-box-shadow:0px 2px 2px #d3d3d3;
+	-webkit-box-shadow:0px 2px 2px #d3d3d3;
+	box-shadow:0px 2px 2px #d3d3d3;
+}
+
+nav ul li a:hover, nav ul li a:focus{
+	background-color:white;
+}
+
+nav ul li a:active{
+	color: white;	
+	text-shadow:0 1px 1px gray;
+	text-decoration:none;
+	background-color:#d80d57;
+	border-left-color:#8b103d;
+}
+
+/* Article styles: */
+
+article{
+	margin:0;
+	padding:20px 4.5%;
+	border-left: 4px solid white;	
+	letter-spacing:0.05em;
+}
+
+article:hover{
+		border-left-color: #d80d57;
+}
+
+article p{
+	line-height:1.8em;
+}
+
+article figure{
+	float:right;
+	height:300px;
+	width:300px;
+	margin: 10px 0 4% 8%;
+	overflow:hidden;
+	border:1px solid #cccccc;
+	
+	/* Applying CSS3 rounded corners: */
+    -moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+}
+
+/* Footer styling: */
+
+footer{
+	background-color: #d80d57;
+	padding: 30px 40px;
+	text-align:center;
+	font-size:0.8em;
+	clear: both;
+	color: #eed9e1;
+	
+	background-image: linear-gradient(#a74166 0%, #d80d57 13%, #d80d57 30%, #b8124f 95%);
+	background-image: -o-linear-gradient(#a74166 0%, #d80d57 13%, #d80d57 30%, #b8124f 95%);
+	background-image: -webkit-linear-gradient(#a74166 0%, #d80d57 13%, #d80d57 30%, #b8124f 95%);
+	background-image: -moz-linear-gradient(#a74166 0%, #d80d57 13%, #d80d57 30%, #b8124f 95%);	
+}
+
+footer p{
+	position:relative;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+footer a,footer a:visited{
+	font-weight: bold;
+	color:#eed9e1;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+footer #copyright {
+	float: left;
+}
